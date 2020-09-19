@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Hotel Home page</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a herf="#" class="logo">Samarth Cakes</a>
+
+      <div class="floatbut" onclick="toggle()"><h2>></h2></div>
+      <ul class="menu">
+        <li><a href="#home" onclick="toggle()">Home</a></li>
+        <li><a href="#cakes" onclick="toggle()">Cakes</a></li>
+        <li><a href="#ab" onclick="toggle()">About Us</a></li>
+        <li><a href="#fe" onclick="toggle()">Learn Baking</a></li>
+      </ul>
+    </header>
+    <div id="menb">
+      <div class="toggle" onclick="toggle()"></div>
+    </div>
+    <section class="banner" id="home">
+      <div class="textBx">
+        <h2>Welcome to <br /><span>Samarth Cakes and Shapes</span></h2>
+        <h3>Enjoy <span class="typx"></span></h3>
+        <a href="#ab">About Us</a>
+      </div>
+    </section>
+    <section class="cakes" id="cakes">
+      <div class="msgl">
+        <h2>Learn with us</h2>
+
+        <a href="#fe">Click here</a>
+      </div>
+      <div class="heading">
+        <h2>Our some Mouthwatering cakes</h2>
+      </div>
+      <div class="content">
+        <div class="contentBx">
+          <div class="imgbot">
+            <img src="images/c4.jpg" class="cakeimg" />
+          </div>
+          <h3>Ras malai Cake</h3>
+        </div>
+        <div class="contentBx">
+          <div class="imgbot">
+            <img src="images/c5.jpg" class="cakeimg" />
+          </div>
+          <h3>Fruit Cakes</h3>
+        </div>
+        <div class="contentBx">
+          <div class="imgbot">
+            <img src="images/c6.jpg" class="cakeimg" />
+          </div>
+          <h3>Doll Cakes</h3>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="ab">
+      <div class="heading">
+        <h2>About us</h2>
+      </div>
+      <div class="contenta">
+        <div class="contentBx w50">
+          <h3>Baking the best of cakes in Town.</h3>
+          <p>We offer our clients a full scope of cakes and baked goods.</p>
+          <h4>Some more flavours</h4>
+          <ul>
+            <li>Black Forest</li>
+            <li>Butterscotch</li>
+            <li>Dark Chocolate</li>
+            <li>White Forest</li>
+            <li>Kulfi Faluda Flavour</li>
+          </ul>
+        </div>
+        <div class="w50">
+          <div class="card">
+            <div class="imgBox">
+              <img src="images/ca1.jpg" class="imgt" />
+            </div>
+            <div class="cdet">
+              <h2>Make every occassion Delightful</h2>
+              <p>Wish your close ones with the best flavoured cakes.</p>
+              <p>We bake all kinds of cakes for every occassion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="amb" id="fe">
+      <div class="heading">
+        <h2>Learn how to Bake Cakes with us</h2>
+      </div>
+      <div class="lcard">
+        <h2>We will teach you entire cake baking process</h2>
+        <h3>The Course will include Baking of 3 Cakes</h3>
+        <ul>
+          <li>Cake 1</li>
+          <li>Cake 2</li>
+          <li>Cake 3</li>
+        </ul>
+        <p>Course fees- 600</p>
+        <p>Contact us on - 7058060349</p>
+        <div class="foot">
+          <a href="https://wa.me/917058060349"
+            ><i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="js/typed.js"></script>
+    <script type="text/javascript">
+      var typed = new Typed(".typx", {
+        strings: [
+          "Anniverssary Cakes ",
+          "Birthday Cakes",
+          "Graduation Cakes",
+          "Bespoke Cakes",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      function toggle() {
+        var header = document.getElementById("header");
+        var menuTo = document.querySelector(".menu");
+        var menb = document.querySelector("#menb");
+        header.classList.toggle("active");
+        menuTo.classList.toggle("active");
+        menb.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
