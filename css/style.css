@@ -286,7 +286,11 @@ header ul li a {
   }
   50% {
     transform: rotateY(-105deg);
-    transition-delay: 3s;
+    animation-play-state: paused;
+  }
+  70% {
+    transform: rotateY(-105deg);
+    animation-play-state: paused;
   }
   100% {
     transform: rotateY(0deg);
@@ -651,7 +655,7 @@ header ul li a {
     font-weight: 300;
   }
   .amb .lcard p {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: #fff;
     margin-top: 20px;
